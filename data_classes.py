@@ -6,6 +6,15 @@
 # ------------------------------------------------------------------------------- #
 
 # Data -------------------------------------------- #
+
+try:
+    if __name__ == "__main__":
+        raise Exception("Please use the main.py file to start this application.")
+    else:
+        from datetime import date  # This will only import if the exception is not thrown.
+except Exception as e:
+    print(e.__str__())
+
 FILE_NAME: str = 'EmployeeRatings.json'
 
 MENU: str = '''
@@ -20,8 +29,6 @@ MENU: str = '''
 
 employees: list = []  # a table of employee data
 menu_choice = ''
-
-from datetime import date
 
 class Person:
     """
