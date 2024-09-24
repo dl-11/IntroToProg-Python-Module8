@@ -124,7 +124,7 @@ class IO:
             employee_object = employee_type()
             employee_object.first_name = input("What is the employee's first name? ")
             employee_object.last_name = input("What is the employee's last name? ")
-            employee_object.review_date = input("What is their review date? ")
+            employee_object.review_date = input("What is their review date? (YYYY-MM-DD) ")
             employee_object.review_rating = int(input("What is their review rating? "))
             employee_data.append(employee_object)
 
